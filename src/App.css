@@ -1,24 +1,44 @@
-.wrap {
-  height: 100vh;
-  font-family: 'Press Start 2P', system-ui;
+* {
+  margin: 0;
+  padding: 0;
 }
 
+.wrap {
+  min-height: 100vh;
+  font-family: 'Press Start 2P', system-ui;
+}
+/*font-family: 'DungGeunMo';*/
 .header-area {
   position: sticky;
   top: 0;
-  height: 70px;
-  background-color: #96cf87;
+  height: 90px;
+  background-color: #96beeb;
   text-align: center;
   color: white;
-}
-.footer-area {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  height: 50px;
-  background-color: #96cf87;
-  width: 100%;
+  margin-bottom: 60px;
+  z-index: 1000;
+}
+.svg-icon {
+  position: relative;
+  right: 10px;
+  bottom: 7px;
+}
+.footer-area {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #96beeb;
   color: white;
+}
+
+.slider-container {
+  margin-bottom: 100px;
+  border: 2px solid black;
+  width: 80%;
+  text-align: center;
 }

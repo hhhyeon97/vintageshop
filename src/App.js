@@ -4,14 +4,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './component/Footer';
 import Header from './component/Header';
 import ProductAll from './page/ProductAll';
-import Carousel from './component/Carousel';
+import { Routes, Route } from 'react-router-dom';
+import Login from './page/Login';
+import ProductDetail from './page/ProductDetail';
 
 function App() {
   return (
     <div className="wrap">
       <Header />
-      {/* <Carousel /> */}
-      <ProductAll />
+      <Routes>
+        <Route path="/" element={<ProductAll />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
+      </Routes>
       <Footer />
     </div>
   );

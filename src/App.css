@@ -11,33 +11,44 @@
 .header-area {
   position: sticky;
   top: 0;
-  height: 90px;
-  background-color: #96beeb;
-  text-align: center;
+  height: 80px;
+  background-color: #000000;
   color: white;
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-bottom: 60px;
   z-index: 1000;
 }
+.header-wrap {
+  display: flex;
+  margin-left: 40px;
+}
 .svg-icon {
   position: relative;
   right: 10px;
-  bottom: 7px;
+  bottom: 5px;
+}
+.header-title {
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+.login-title {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.dibs-icon {
+  position: absolute;
+  right: 150px;
+  top: 15px;
 }
 .footer-area {
-  margin-top: 150px;
+  margin-top: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px;
-  background-color: #96beeb;
+  background-color: #000000;
   color: white;
-}
-
-.slider-container {
-  margin-bottom: 100px;
-  text-align: center;
-  height: 250px;
 }

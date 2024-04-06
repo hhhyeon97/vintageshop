@@ -3,18 +3,23 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-function SimpleSlider() {
+function MultipleItems() {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 4000,
   };
+
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div>오잉</div>
+        <div>
+          <h3>1</h3>
+        </div>
         <div>
           <h3>2</h3>
         </div>
@@ -30,9 +35,18 @@ function SimpleSlider() {
         <div>
           <h3>6</h3>
         </div>
+        <div>
+          <h3>7</h3>
+        </div>
+        <div>
+          <h3>8</h3>
+        </div>
+        <div>
+          <h3>9</h3>
+        </div>
       </Slider>
     </div>
   );
 }
 
-export default SimpleSlider;
+export default MultipleItems;

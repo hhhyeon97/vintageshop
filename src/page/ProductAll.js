@@ -2,6 +2,8 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Card from '../component/Card';
+import Carousel from '../component/Carousel';
+
 const ProductAll = () => {
   const [productList, setProductList] = useState([]);
   const getProducts = async () => {
@@ -18,6 +20,7 @@ const ProductAll = () => {
 
   return (
     <Container>
+      {/* <Carousel /> */}
       <Row xs={1} sm={2} md={2} lg={4}>
         {productList.map((item) => (
           <Col lg={3}>

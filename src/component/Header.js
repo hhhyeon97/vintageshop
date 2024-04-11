@@ -148,7 +148,7 @@ const Header = () => {
             ></path>
           </g>
         </svg>
-        <h2 className="header-title" onClick={goToHome}>
+        <h2 className="header-title nes-pointer" onClick={goToHome}>
           WaveHub
         </h2>
       </div>
@@ -433,7 +433,7 @@ const Header = () => {
           ></path>
         </g>
       </svg>
-      <h4 className="login-title" onClick={goToLogin}>
+      <h4 className="login-title nes-pointer" onClick={goToLogin}>
         LOGIN
       </h4>
     </div>

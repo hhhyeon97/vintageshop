@@ -34,13 +34,11 @@
   bottom: 5px;
 }
 .header-title {
-  cursor: pointer;
   letter-spacing: 3px;
 }
 .login-title {
   position: absolute;
   right: 30px;
-  cursor: pointer;
   font-size: 20px;
 }
 .dibs-icon {
@@ -112,7 +110,12 @@
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-/*detail page*/
+.footer-area h4 {
+  position: relative;
+  top: 5px;
+}
+
+/* detail page */
 
 .detail-img {
   border: 4px solid rgba(221, 221, 221, 0.4);
@@ -156,6 +159,23 @@
   align-items: center;
 }
 
+/* login page */
+
+.login-wrap {
+  height: 60vh;
+  flex-direction: column;
+}
+.login-head {
+  color: white;
+}
+.login-wrap input {
+  margin: 25px auto;
+}
+
+.login-btn {
+  width: 200px;
+}
+
 @media (max-width: 768px) {
   .detail-wrap {
     text-align: center;
@@ -177,5 +197,8 @@
   .new,
   .pick {
     font-size: 20px;
+  }
+  .login-wrap input {
+    width: 60%;
   }
 }

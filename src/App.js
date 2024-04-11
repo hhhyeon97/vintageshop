@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import 'nes.css/css/nes.min.css';
 import Footer from './component/Footer';
 import Header from './component/Header';
 import ProductAll from './page/ProductAll';

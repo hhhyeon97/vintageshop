@@ -30,7 +30,7 @@
     {
       "id": 3,
       "img": "https://image8.coupangcdn.com/image/retail/images/8398447375933062-64d04995-1ce0-47d7-95f1-b01906177a73.png",
-      "title": "소니 노이즈캔슬링 블루투스 헤드폰",
+      "title": "소니 블루투스 헤드폰",
       "price": 388000,
       "type": "헤드폰",
       "new": true,
@@ -39,7 +39,7 @@
     {
       "id": 4,
       "img": "https://image7.coupangcdn.com/image/vendor_inventory/9b13/f9927a1891ec1a9ceed0163b3fba2f18849dd2ff1ac22045528945d8ef3c.jpg",
-      "title": "보냄 휴대용 카세트 플레이어",
+      "title": "보냄 카세트 플레이어",
       "price": 32300,
       "type": "카세트",
       "new": true,
@@ -112,7 +112,7 @@
     {
       "id": 12,
       "img": "https://image8.coupangcdn.com/image/retail/images/2023/06/26/11/8/7d33e7d8-762e-4f39-8785-b2e58d3bbc66.jpg",
-      "title": "브리츠 블루투스 FM 라디오 스피커",
+      "title": "브리츠 블루투스 스피커",
       "price": 55200,
       "type": "스피커",
       "new": true,
@@ -121,7 +121,7 @@
     {
       "id": 13,
       "img": "https://image7.coupangcdn.com/image/vendor_inventory/97a6/35fb28e11017e5008abb48fadb58517b719d277f2991671778948b8c14a3.jpg",
-      "title": "브리츠 블루투스 턴테이블 플레이어",
+      "title": "브리츠 턴테이블 플레이어",
       "price": 84000,
       "type": "턴테이블",
       "new": true,
@@ -130,7 +130,7 @@
     {
       "id": 14,
       "img": "https://image6.coupangcdn.com/image/retail/images/2022/12/26/13/7/fb841524-cfcb-4977-80fc-0160c2d23433.jpg",
-      "title": "사운드룩 포터블 감성 LP 턴테이블",
+      "title": "사운드룩 LP 턴테이블",
       "price": 56000,
       "type": "턴테이블",
       "new": true,
@@ -157,7 +157,7 @@
     {
       "id": 17,
       "img": "https://image6.coupangcdn.com/image/retail/images/2024/01/29/12/7/3661c977-d478-41e6-98cc-3b49790c2588.jpg",
-      "title": "코비 휴대용 MP3 CD플레이어",
+      "title": "코비 MP3 CD플레이어",
       "price": 59800,
       "type": "CD플레이어",
       "new": true,
@@ -175,7 +175,7 @@
     {
       "id": 19,
       "img": "https://image9.coupangcdn.com/image/rs_quotation_api/bvi9gqvy/914b3516c64b4eff8f27112e90635cd2.jpg",
-      "title": "소니 블루투스 헤드셋 WH-CH520",
+      "title": "소니 헤드셋 WH-CH520",
       "price": 79900,
       "type": "헤드폰",
       "new": true,
@@ -193,7 +193,7 @@
     {
       "id": 21,
       "img": "https://image8.coupangcdn.com/image/retail/images/2021/06/14/15/0/7be8a85f-a099-4372-bccc-734b529c7c6e.jpg",
-      "title": "젠하이저 오픈형 오버이어 헤드폰",
+      "title": "젠하이저 오버이어 헤드폰",
       "price": 180000,
       "type": "헤드폰",
       "new": true,

@@ -18,8 +18,8 @@ const ProductDetail = () => {
   }, []);
 
   return (
-    <Container className="d-flex justify-content-center align-items-center">
-      <Row>
+    <Container className="d-flex justify-content-center align-items-center detail-wrap">
+      <Row className="detail-row">
         <Col>
           <img
             className="detail-img"

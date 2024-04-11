@@ -6,17 +6,23 @@
 .wrap {
   min-height: 100vh;
   font-family: 'Press Start 2P', system-ui;
+  background-image: url('https://i.pinimg.com/564x/b2/9a/66/b29a666afd1f420ab5174bebac47fc4b.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header-area {
   position: sticky;
   top: 0;
   height: 80px;
-  background-color: #000000;
   color: white;
   display: flex;
   align-items: center;
   margin-bottom: 60px;
   z-index: 1000;
+  border-bottom: 2px solid rgba(221, 221, 221, 0.6);
+  backdrop-filter: blur(10px); /* blur 효과 적용 */
+  -webkit-backdrop-filter: blur(10px); /* Safari 브라우저 대응 */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
 }
 .header-wrap {
   display: flex;
@@ -62,14 +68,42 @@
   font-size: 18px;
 }
 
+.card-hover {
+  transition: transform 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.1);
+}
+.card-badge {
+  position: absolute;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.wave-badge {
+  background-color: rgba(212, 138, 169, 0.9);
+  top: 10px;
+  left: 32px;
+}
+
+.new-badge {
+  background-color: rgba(144, 194, 156, 0.9);
+  top: 42px;
+  left: 32px;
+}
+
 .footer-area {
   margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px;
-  background-color: #000000;
   color: white;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 /*detail page*/
@@ -80,16 +114,22 @@
 }
 .detail-title {
   font-family: 'DungGeunMo';
-  font-size: 23px;
+  font-size: 30px;
 }
 .new {
-  background-color: rgb(144, 194, 156);
+  background-color: rgb(238, 241, 245);
   font-size: 25px;
+  padding: 3px;
 }
 
 .pick {
   background-color: rgb(212, 138, 169);
   font-size: 25px;
+  padding: 3px;
+}
+
+.pick:empty {
+  display: none;
 }
 
 .price {
@@ -103,4 +143,32 @@
   padding: 5px;
   font-family: 'DungGeunMo';
   font-size: 20px;
+  margin-top: 10px;
+}
+
+.detail-row {
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .detail-wrap {
+    text-align: center;
+  }
+  .detail-row {
+    flex-direction: column;
+  }
+  .detail-img {
+    width: 300px;
+    height: 300px;
+  }
+  .buy-btn {
+    width: 70%;
+  }
+  .card-badge {
+    display: none;
+  }
+  .card-title,
+  .card-price {
+    text-align: center;
+  }
 }

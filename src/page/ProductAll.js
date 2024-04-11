@@ -23,7 +23,7 @@ const ProductAll = () => {
       {/* <Carousel /> */}
       <Row xs={1} sm={2} md={2} lg={4} className="justify-content-center">
         {productList.map((item) => (
-          <Col lg={3} className="d-flex justify-content-center">
+          <Col lg={3} className="d-flex justify-content-center mb-3 card-hover">
             <Card item={item} />
           </Col>
         ))}

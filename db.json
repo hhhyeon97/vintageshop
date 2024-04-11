@@ -6,7 +6,8 @@
       "title": "WM-F17",
       "price": 155000,
       "type": "카세트",
-      "new": false
+      "new": false,
+      "choice": true
     },
     {
       "id": 1,
@@ -14,7 +15,8 @@
       "title": "WM-F70",
       "price": 299000,
       "type": "카세트",
-      "new": false
+      "new": false,
+      "choice": false
     },
     {
       "id": 2,
@@ -22,7 +24,8 @@
       "title": "WM-F35",
       "price": 430000,
       "type": "카세트",
-      "new": false
+      "new": false,
+      "choice": false
     },
     {
       "id": 3,
@@ -30,7 +33,8 @@
       "title": "소니 노이즈캔슬링 블루투스 헤드폰",
       "price": 388000,
       "type": "헤드폰",
-      "new": true
+      "new": true,
+      "choice": false
     },
     {
       "id": 4,
@@ -38,7 +42,8 @@
       "title": "보냄 휴대용 카세트 플레이어",
       "price": 32300,
       "type": "카세트",
-      "new": true
+      "new": true,
+      "choice": true
     },
     {
       "id": 5,
@@ -46,7 +51,8 @@
       "title": "WM-F62",
       "price": 87000,
       "type": "카세트",
-      "new": true
+      "new": true,
+      "choice": false
     },
     {
       "id": 6,
@@ -54,7 +60,8 @@
       "title": "WM-F21",
       "price": 99000,
       "type": "카세트",
-      "new": false
+      "new": false,
+      "choice": false
     },
     {
       "id": 7,
@@ -62,7 +69,8 @@
       "title": "WM-F58",
       "price": 325000,
       "type": "카세트",
-      "new": false
+      "new": false,
+      "choice": false
     },
 
     {
@@ -71,7 +79,8 @@
       "title": "WM-F46",
       "price": 610000,
       "type": "카세트",
-      "new": true
+      "new": true,
+      "choice": false
     },
     {
       "id": 9,
@@ -79,7 +88,8 @@
       "title": "WM-F12",
       "price": 129900,
       "type": "카세트",
-      "new": false
+      "new": false,
+      "choice": false
     },
     {
       "id": 10,
@@ -87,7 +97,8 @@
       "title": "WM-F83",
       "price": 512000,
       "type": "카세트",
-      "new": false
+      "new": false,
+      "choice": false
     },
     {
       "id": 11,
@@ -95,7 +106,8 @@
       "title": "WM-F97",
       "price": 415000,
       "type": "카세트",
-      "new": false
+      "new": false,
+      "choice": false
     },
     {
       "id": 12,
@@ -103,7 +115,8 @@
       "title": "브리츠 블루투스 FM 라디오 스피커",
       "price": 55200,
       "type": "스피커",
-      "new": true
+      "new": true,
+      "choice": false
     },
     {
       "id": 13,
@@ -111,7 +124,8 @@
       "title": "브리츠 블루투스 턴테이블 플레이어",
       "price": 84000,
       "type": "턴테이블",
-      "new": true
+      "new": true,
+      "choice": false
     },
     {
       "id": 14,
@@ -119,7 +133,8 @@
       "title": "사운드룩 포터블 감성 LP 턴테이블",
       "price": 56000,
       "type": "턴테이블",
-      "new": true
+      "new": true,
+      "choice": false
     },
     {
       "id": 15,
@@ -127,7 +142,8 @@
       "title": "아이리버 헤드폰",
       "price": 81900,
       "type": "헤드폰",
-      "new": true
+      "new": true,
+      "choice": false
     },
     {
       "id": 16,
@@ -135,7 +151,8 @@
       "title": "보스 QC 헤드폰",
       "price": 344000,
       "type": "헤드폰",
-      "new": true
+      "new": true,
+      "choice": false
     },
     {
       "id": 17,
@@ -143,7 +160,8 @@
       "title": "코비 휴대용 MP3 CD플레이어",
       "price": 59800,
       "type": "CD플레이어",
-      "new": true
+      "new": true,
+      "choice": false
     },
     {
       "id": 18,
@@ -151,7 +169,8 @@
       "title": "소니 CD플레이어",
       "price": 39900,
       "type": "CD플레이어",
-      "new": false
+      "new": false,
+      "choice": false
     },
     {
       "id": 19,
@@ -159,7 +178,8 @@
       "title": "소니 블루투스 헤드셋 WH-CH520",
       "price": 79900,
       "type": "헤드폰",
-      "new": true
+      "new": true,
+      "choice": false
     },
     {
       "id": 20,
@@ -167,7 +187,8 @@
       "title": "액센 CD Mini 플레이어",
       "price": 69000,
       "type": "CD플레이어",
-      "new": true
+      "new": true,
+      "choice": true
     },
     {
       "id": 21,
@@ -175,7 +196,8 @@
       "title": "젠하이저 오픈형 오버이어 헤드폰",
       "price": 180000,
       "type": "헤드폰",
-      "new": true
+      "new": true,
+      "choice": false
     },
     {
       "id": 22,
@@ -183,7 +205,8 @@
       "title": "투랩 달 무드등 스피커",
       "price": 36900,
       "type": "스피커",
-      "new": true
+      "new": true,
+      "choice": false
     },
     {
       "id": 23,
@@ -191,7 +214,8 @@
       "title": "일우 투명 CD플레이어",
       "price": 83600,
       "type": "CD플레이어",
-      "new": true
+      "new": true,
+      "choice": true
     }
   ]
 }

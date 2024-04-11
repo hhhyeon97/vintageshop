@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Card from '../component/Card';
-import Carousel from '../component/Carousel';
+// import Carousel from '../component/Carousel';
 
 const ProductAll = () => {
   const [productList, setProductList] = useState([]);

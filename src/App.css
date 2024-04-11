@@ -57,3 +57,30 @@
   background-color: #000000;
   color: white;
 }
+
+/*detail page*/
+
+.detail-img {
+  border: 4px solid gray;
+  border-radius: 4px;
+  padding: 10px;
+}
+.detail-title {
+  font-family: 'DungGeunMo';
+  font-size: 23px;
+}
+.new {
+  background-color: rgb(144, 194, 156);
+  font-size: 25px;
+}
+
+.pick {
+  background-color: rgb(212, 138, 169);
+  font-size: 25px;
+}
+
+.price {
+  font-family: 'DungGeunMo';
+  color: rgb(87, 87, 107);
+  font-size: 25px;
+}

@@ -11,14 +11,18 @@ const Card = ({ item }) => {
   return (
     <div>
       <img
+        style={{ cursor: 'pointer' }}
         width={200}
         height={200}
         src={item?.img}
         onClick={goToDetail}
         alt=""
       />
-      <div>{item?.title}</div>
-      <div>{item?.price}</div>
+      <div className="card-title">{item?.title}</div>
+      <div className="card-price">
+        {item?.price.toLocaleString('ko-KR')}
+        <span className="price-won">원</span>
+      </div>
     </div>
   );
 };

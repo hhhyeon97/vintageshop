@@ -39,6 +39,9 @@ const ProductDetail = () => {
           <div className="price">
             {product?.price.toLocaleString('ko-KR')}원
           </div>
+          <div>
+            <button className="nes-btn is-normal buy-btn">구매하기</button>
+          </div>
         </Col>
       </Row>
     </Container>

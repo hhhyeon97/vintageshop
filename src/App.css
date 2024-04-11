@@ -165,9 +165,7 @@
   height: 60vh;
   flex-direction: column;
 }
-.login-head {
-  color: white;
-}
+
 .login-wrap input {
   margin: 25px auto;
 }

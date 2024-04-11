@@ -11,7 +11,15 @@ const Login = () => {
 
   return (
     <Container className="d-flex justify-content-center align-items-center login-wrap">
-      <h2 className="login-head">Login</h2>
+      <h2
+        class="login-head"
+        style={{
+          fontSize: '30px',
+          color: 'white',
+        }}
+      >
+        Login
+      </h2>
       <div class="nes-field">
         <input type="id" id="id_field" class="nes-input" placeholder="id" />
       </div>

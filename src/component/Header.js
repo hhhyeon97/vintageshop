@@ -272,7 +272,7 @@ const Header = () => {
           ></path>
         </g>
       </svg>
-      <svg
+      {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         height="38"
@@ -432,7 +432,7 @@ const Header = () => {
             stroke-width="1"
           ></path>
         </g>
-      </svg>
+      </svg> */}
       <h4 className="login-title nes-pointer" onClick={goToLogin}>
         LOGIN
       </h4>

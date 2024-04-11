@@ -4,57 +4,65 @@
       "id": 0,
       "img": "https://i.pinimg.com/564x/85/5e/5f/855e5f628d556080cec635d0afdbc303.jpg",
       "title": "WM-F17",
-      "price": 255000,
-      "type": "워크맨"
+      "price": 155000,
+      "type": "카세트",
+      "new": false
     },
     {
       "id": 1,
       "img": "https://i.pinimg.com/564x/fa/f2/06/faf20618c32c6666422314c7be6bbaef.jpg",
       "title": "WM-F70",
-      "price": 599000,
-      "type": "워크맨"
+      "price": 299000,
+      "type": "카세트",
+      "new": false
     },
     {
       "id": 2,
       "img": "https://i.pinimg.com/564x/82/02/39/820239bc135ee06acc5480df0a6e6ec4.jpg",
       "title": "WM-F35",
       "price": 430000,
-      "type": "워크맨"
+      "type": "카세트",
+      "new": false
     },
     {
       "id": 3,
-      "img": "https://image9.coupangcdn.com/image/retail/images/2024/02/13/11/2/75019afb-5871-4c72-95a9-a3f1ab5259cc.jpg",
-      "title": "IRS-C202",
-      "price": 39900,
-      "type": "아이리버"
+      "img": "https://image8.coupangcdn.com/image/retail/images/8398447375933062-64d04995-1ce0-47d7-95f1-b01906177a73.png",
+      "title": "소니 노이즈캔슬링 블루투스 헤드폰",
+      "price": 388000,
+      "type": "헤드폰",
+      "new": true
     },
     {
       "id": 4,
-      "img": "https://image10.coupangcdn.com/image/vendor_inventory/a06a/549e1c66198770ce8fb6ae65635eaea09cb48f78d7d787df74db994571bf.jpg",
-      "title": "IBS-A1",
-      "price": 39900,
-      "type": "아이리버"
+      "img": "https://image7.coupangcdn.com/image/vendor_inventory/9b13/f9927a1891ec1a9ceed0163b3fba2f18849dd2ff1ac22045528945d8ef3c.jpg",
+      "title": "보냄 휴대용 카세트 플레이어",
+      "price": 32300,
+      "type": "카세트",
+      "new": true
     },
     {
       "id": 5,
       "img": "https://i.pinimg.com/564x/6b/ae/c9/6baec917e05ce4099fc654ccbd0408e9.jpg",
       "title": "WM-F62",
       "price": 87000,
-      "type": "워크맨"
+      "type": "카세트",
+      "new": true
     },
     {
       "id": 6,
       "img": "https://i.pinimg.com/564x/79/35/fd/7935fdd3d14cac46d25c1bc83249ebe8.jpg",
       "title": "WM-F21",
       "price": 99000,
-      "type": "워크맨"
+      "type": "카세트",
+      "new": false
     },
     {
       "id": 7,
       "img": "https://i.pinimg.com/564x/af/44/48/af4448f226a263d27d2b293030806f8c.jpg",
       "title": "WM-F58",
       "price": 325000,
-      "type": "워크맨"
+      "type": "카세트",
+      "new": false
     },
 
     {
@@ -62,63 +70,128 @@
       "img": "https://i.pinimg.com/564x/80/0e/6e/800e6ea09d50844578512c59ff2726fe.jpg",
       "title": "WM-F46",
       "price": 610000,
-      "type": "워크맨"
+      "type": "카세트",
+      "new": true
     },
     {
       "id": 9,
       "img": "https://i.pinimg.com/736x/82/31/fa/8231fae1178ff0717e0664c3e83cb503.jpg",
       "title": "WM-F12",
       "price": 129900,
-      "type": "워크맨"
+      "type": "카세트",
+      "new": false
     },
     {
       "id": 10,
       "img": "https://i.pinimg.com/564x/13/5e/86/135e865756a966e16ea269fa6934042c.jpg",
       "title": "WM-F83",
       "price": 512000,
-      "type": "워크맨"
+      "type": "카세트",
+      "new": false
     },
     {
       "id": 11,
       "img": "https://i.pinimg.com/564x/00/df/5a/00df5abaac103e1057b4346188af8e0b.jpg",
       "title": "WM-F97",
       "price": 415000,
-      "type": "워크맨"
+      "type": "카세트",
+      "new": false
     },
     {
       "id": 12,
-      "img": "https://image10.coupangcdn.com/image/vendor_inventory/d2c0/04dbb69aa7e3c93697dd54dfd74f5cf40ff4f751a5870f1e04951ced3c32.jpg",
-      "title": "투랩 턴테이블 스피커",
-      "price": 44900,
-      "type": "턴테이블"
+      "img": "https://image8.coupangcdn.com/image/retail/images/2023/06/26/11/8/7d33e7d8-762e-4f39-8785-b2e58d3bbc66.jpg",
+      "title": "브리츠 블루투스 FM 라디오 스피커",
+      "price": 55200,
+      "type": "스피커",
+      "new": true
     },
     {
       "id": 13,
       "img": "https://image7.coupangcdn.com/image/vendor_inventory/97a6/35fb28e11017e5008abb48fadb58517b719d277f2991671778948b8c14a3.jpg",
       "title": "브리츠 블루투스 턴테이블 플레이어",
       "price": 84000,
-      "type": "턴테이블"
+      "type": "턴테이블",
+      "new": true
     },
     {
       "id": 14,
       "img": "https://image6.coupangcdn.com/image/retail/images/2022/12/26/13/7/fb841524-cfcb-4977-80fc-0160c2d23433.jpg",
       "title": "사운드룩 포터블 감성 LP 턴테이블",
       "price": 56000,
-      "type": "턴테이블"
+      "type": "턴테이블",
+      "new": true
     },
     {
       "id": 15,
       "img": "https://i.pinimg.com/564x/bc/2b/93/bc2b934643ba780185cde07afa9f7339.jpg",
       "title": "아이리버 헤드폰",
       "price": 81900,
-      "type": "헤드폰"
+      "type": "헤드폰",
+      "new": true
     },
     {
       "id": 16,
       "img": "https://image10.coupangcdn.com/image/retail/images/2023/09/06/16/4/2a140ef5-5ab9-481c-a350-d01adc8a9e33.png",
       "title": "보스 QC 헤드폰",
       "price": 344000,
-      "type": "헤드폰"
+      "type": "헤드폰",
+      "new": true
+    },
+    {
+      "id": 17,
+      "img": "https://image6.coupangcdn.com/image/retail/images/2024/01/29/12/7/3661c977-d478-41e6-98cc-3b49790c2588.jpg",
+      "title": "코비 휴대용 MP3 CD플레이어",
+      "price": 59800,
+      "type": "CD플레이어",
+      "new": true
+    },
+    {
+      "id": 18,
+      "img": "https://i.pinimg.com/564x/b4/ea/ac/b4eaac79b0038705158d5566bda18e24.jpg",
+      "title": "소니 CD플레이어",
+      "price": 39900,
+      "type": "CD플레이어",
+      "new": false
+    },
+    {
+      "id": 19,
+      "img": "https://image9.coupangcdn.com/image/rs_quotation_api/bvi9gqvy/914b3516c64b4eff8f27112e90635cd2.jpg",
+      "title": "소니 블루투스 헤드셋 WH-CH520",
+      "price": 79900,
+      "type": "헤드폰",
+      "new": true
+    },
+    {
+      "id": 20,
+      "img": "https://image7.coupangcdn.com/image/retail/images/2023/11/13/11/8/0eee0452-0122-40f1-ad5f-64bb232be64f.jpg",
+      "title": "액센 CD Mini 플레이어",
+      "price": 69000,
+      "type": "CD플레이어",
+      "new": true
+    },
+    {
+      "id": 21,
+      "img": "https://image8.coupangcdn.com/image/retail/images/2021/06/14/15/0/7be8a85f-a099-4372-bccc-734b529c7c6e.jpg",
+      "title": "젠하이저 오픈형 오버이어 헤드폰",
+      "price": 180000,
+      "type": "헤드폰",
+      "new": true
+    },
+    {
+      "id": 22,
+      "img": "https://image7.coupangcdn.com/image/vendor_inventory/0a60/016dbd4ca2f6e52155332a97e0b518bd6333ee11c4bc28234dad340fa725.jpg",
+      "title": "투랩 달 무드등 스피커",
+      "price": 36900,
+      "type": "스피커",
+      "new": true
+    },
+    {
+      "id": 23,
+      "img": "https://image7.coupangcdn.com/image/vendor_inventory/66fe/c5990e322d21d5de350922e7b4e36ac4c65fea842eec35a5709b3bfbc137.jpg",
+      "title": "일우 투명 CD플레이어",
+      "price": 83600,
+      "type": "CD플레이어",
+      "new": true
     }
   ]
 }

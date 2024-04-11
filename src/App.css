@@ -68,6 +68,31 @@
   font-size: 18px;
 }
 
+.img-badge-area {
+  position: relative;
+  width: 100%;
+}
+
+.card-badge {
+  position: absolute;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  color: #fff;
+  z-index: 1;
+  left: -2px;
+}
+
+.wave-badge {
+  background-color: rgba(212, 138, 169, 0.9);
+  top: 0px;
+}
+
+.new-badge {
+  background-color: rgba(144, 194, 156, 0.9);
+  top: 33px;
+}
+
 .card-hover {
   transition: transform 0.3s ease;
 }
@@ -75,28 +100,9 @@
 .card-hover:hover {
   transform: scale(1.1);
 }
-.card-badge {
-  position: absolute;
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 2px;
-  color: #fff;
-}
-
-.wave-badge {
-  background-color: rgba(212, 138, 169, 0.9);
-  top: 10px;
-  left: 32px;
-}
-
-.new-badge {
-  background-color: rgba(144, 194, 156, 0.9);
-  top: 42px;
-  left: 32px;
-}
 
 .footer-area {
-  margin-top: 100px;
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,11 +170,12 @@
   .buy-btn {
     width: 70%;
   }
-  .card-badge {
-    display: none;
-  }
   .card-title,
   .card-price {
     text-align: center;
+  }
+  .new,
+  .pick {
+    font-size: 20px;
   }
 }

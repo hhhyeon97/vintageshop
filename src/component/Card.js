@@ -10,19 +10,23 @@ const Card = ({ item }) => {
 
   return (
     <div>
-      <img
-        style={{
-          cursor: 'pointer',
-          borderRadius: '4px',
-        }}
-        width={220}
-        height={220}
-        src={item?.img}
-        onClick={goToDetail}
-        alt=""
-      />
-      {item.choice && <span className="card-badge wave-badge">wave pick!</span>}
-      {item.new && <span className="card-badge new-badge">new!</span>}
+      <div className="img-badge-area">
+        <img
+          style={{
+            cursor: 'pointer',
+            borderRadius: '4px',
+          }}
+          width={220}
+          height={220}
+          src={item?.img}
+          onClick={goToDetail}
+          alt=""
+        />
+        {item.choice && (
+          <span className="card-badge wave-badge">wave pick!</span>
+        )}
+        {item.new && <span className="card-badge new-badge">new!</span>}
+      </div>
       <div className="card-title">{item?.title}</div>
       <div className="card-price">
         {item?.price.toLocaleString('ko-KR')}

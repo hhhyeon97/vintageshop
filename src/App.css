@@ -43,6 +43,11 @@
   right: 150px;
   top: 15px;
 }
+.search-icon {
+  position: absolute;
+  right: 200px;
+  top: 15px;
+}
 .footer-area {
   margin-top: 300px;
   display: flex;

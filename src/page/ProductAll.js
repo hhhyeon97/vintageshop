@@ -19,11 +19,11 @@ const ProductAll = () => {
   }, []);
 
   return (
-    <Container>
+    <Container className="product-all-wrap">
       {/* <Carousel /> */}
-      <Row xs={1} sm={2} md={2} lg={4}>
+      <Row xs={1} sm={2} md={2} lg={4} className="justify-content-center">
         {productList.map((item) => (
-          <Col lg={3}>
+          <Col lg={3} className="d-flex justify-content-center">
             <Card item={item} />
           </Col>
         ))}

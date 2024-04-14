@@ -13,7 +13,6 @@ const Card = ({ item }) => {
       <div className="img-badge-area">
         <img
           style={{
-            cursor: 'pointer',
             borderRadius: '4px',
           }}
           width={220}
@@ -21,6 +20,7 @@ const Card = ({ item }) => {
           src={item?.img}
           onClick={goToDetail}
           alt=""
+          className="nes-pointer"
         />
         {item.choice && (
           <span className="card-badge wave-badge">wave pick!</span>

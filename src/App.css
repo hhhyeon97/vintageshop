@@ -52,6 +52,14 @@
   top: 15px;
 }
 
+.search-input {
+  position: absolute;
+  right: 70px;
+  font-size: 15px;
+  width: 20%;
+  padding: 4px;
+}
+
 .card-price {
   font-size: 12px;
 }

@@ -17,6 +17,10 @@ const ProductDetail = () => {
     getProductDetail();
   }, []);
 
+  const goBuy = () => {
+    console.log('결제페이지로이동하자');
+  };
+
   return (
     <Container className="d-flex justify-content-center align-items-center detail-wrap">
       <Row className="detail-row">
@@ -40,7 +44,9 @@ const ProductDetail = () => {
             {product?.price.toLocaleString('ko-KR')}원
           </div>
           <div>
-            <button className="nes-btn is-normal buy-btn">구매하기</button>
+            <button className="nes-btn is-normal buy-btn" onClick={goBuy}>
+              구매하기
+            </button>
           </div>
         </Col>
       </Row>

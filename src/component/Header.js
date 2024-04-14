@@ -10,6 +10,16 @@ const Header = () => {
     navigate('/login');
   };
 
+  const search = (event) => {
+    // console.log("let's search!");
+    if (event.key === 'Enter') {
+      // console.log('we click this key!', event.key);
+      let keyword = event.target.value;
+      // console.log('keyword', keyword);
+      navigate(`/?q=${keyword}`);
+    }
+  };
+
   return (
     <div className="header-area">
       <div className="header-wrap">
@@ -152,7 +162,7 @@ const Header = () => {
           WaveHub
         </h2>
       </div>
-      <svg
+      {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         height="36"
@@ -271,7 +281,7 @@ const Header = () => {
             stroke-width="1"
           ></path>
         </g>
-      </svg>
+      </svg> */}
       {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -433,6 +443,12 @@ const Header = () => {
           ></path>
         </g>
       </svg> */}
+      <input
+        type="search"
+        className="search-input"
+        placeholder="상품을 검색해보아요 : )"
+        onKeyPress={(event) => search(event)}
+      />
       <h4 className="login-title nes-pointer" onClick={goToLogin}>
         LOGIN
       </h4>

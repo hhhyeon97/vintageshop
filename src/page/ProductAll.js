@@ -11,7 +11,7 @@ const ProductAll = () => {
 
   const getProducts = async () => {
     let searchQuery = query.get('q') || '';
-    console.log('쿼리값은?', searchQuery);
+    // console.log('쿼리값은?', searchQuery);
     let url = `http://localhost:3004/products?q=${searchQuery}`;
     let response = await fetch(url);
     let data = await response.json();
@@ -25,19 +25,18 @@ const ProductAll = () => {
 
   return (
     <Container className="product-all-wrap">
-      {/* <Carousel /> */}
       <Row xs={1} sm={2} md={2} lg={4} className="justify-content-center">
-        {productList.length === 0 ? (
-          <p>검색 결과가 없습니다.</p>
-        ) : (
-          productList.map((item) => (
+        {productList.length ? (
+          productList.map((item, index) => (
             <Col
               lg={3}
               className="d-flex justify-content-center mb-5 card-hover"
             >
-              <Card item={item} />
+              <Card item={item} key={index} />
             </Col>
           ))
+        ) : (
+          <p>상품 없어용 ...</p>
         )}
       </Row>
     </Container>

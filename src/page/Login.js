@@ -20,8 +20,8 @@ const Login = () => {
       >
         Login
       </h2>
-      <div class="nes-field">
-        <input type="id" id="id_field" class="nes-input" placeholder="id" />
+      <div className="nes-field">
+        <input type="id" id="id_field" className="nes-input" placeholder="id" />
       </div>
       <div class="nes-field">
         <input

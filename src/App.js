@@ -7,9 +7,16 @@ import ProductAll from './page/ProductAll';
 import { Routes, Route } from 'react-router-dom';
 import Login from './page/Login';
 import ProductDetail from './page/ProductDetail';
-import Payment from './page/Payment';
+import { useEffect, useState } from 'react';
+import PrivateRoute from './route/PrivateRoute';
 
 function App() {
+  const [authenticate, setAuthenticate] = useState(false);
+
+  useEffect(() => {
+    console.log('aaa', authenticate);
+  }, [authenticate]);
+
   return (
     <div className="wrap">
       <Header />
@@ -17,7 +24,10 @@ function App() {
         <Route path="/" element={<ProductAll />} />
         <Route path="/login" element={<Login />} />
         <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path="/buy" element={<Payment />} />
+        <Route
+          path="/buy"
+          element={<PrivateRoute authenticate={authenticate} />}
+        />
       </Routes>
       <Footer />
     </div>

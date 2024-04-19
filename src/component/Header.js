@@ -10,15 +10,15 @@ const Header = () => {
     navigate('/login');
   };
 
-  const search = (event) => {
-    // console.log("let's search!");
-    if (event.key === 'Enter') {
-      // console.log('we click this key!', event.key);
-      let keyword = event.target.value;
-      // console.log('keyword', keyword);
-      navigate(`/?q=${keyword}`);
-    }
-  };
+  // const search = (event) => {
+  //   // console.log("let's search!");
+  //   if (event.key === 'Enter') {
+  //     // console.log('we click this key!', event.key);
+  //     let keyword = event.target.value;
+  //     // console.log('keyword', keyword);
+  //     navigate(`/?q=${keyword}`);
+  //   }
+  // };
 
   return (
     <div className="header-area">
@@ -163,12 +163,12 @@ const Header = () => {
         </h2>
       </div>
 
-      <input
+      {/* <input
         type="text"
         placeholder="상품을 검색해보아요 : )"
         class="nes-input search-input"
         onKeyPress={(event) => search(event)}
-      />
+      /> */}
       <h4 className="login-title nes-pointer" onClick={goToLogin}>
         LOGIN
       </h4>

@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const ProductDetail = () => {
   const [product, setProduct] = useState(null);
   let { id } = useParams();
+  const navigate = useNavigate();
+
   const getProductDetail = async () => {
     let url = `http://localhost:3004/products/${id}`;
     let response = await fetch(url);
@@ -19,6 +21,7 @@ const ProductDetail = () => {
 
   const goBuy = () => {
     console.log('결제페이지로이동하자');
+    navigate('/buy');
   };
 
   return (

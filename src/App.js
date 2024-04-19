@@ -7,6 +7,7 @@ import ProductAll from './page/ProductAll';
 import { Routes, Route } from 'react-router-dom';
 import Login from './page/Login';
 import ProductDetail from './page/ProductDetail';
+import Payment from './page/Payment';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<ProductAll />} />
         <Route path="/login" element={<Login />} />
         <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/buy" element={<Payment />} />
       </Routes>
       <Footer />
     </div>

@@ -9,21 +9,21 @@ const ProductAll = () => {
   const [productList, setProductList] = useState([]);
   const [query, setQuery] = useSearchParams();
 
-  const getProducts = async () => {
-    let searchQuery = query.get('q') || '';
-    // console.log('쿼리값은?', searchQuery);
-    let url = `http://localhost:3004/products?q=${searchQuery}`;
-    let response = await fetch(url);
-    let data = await response.json();
-    // console.log('데이터', data);
-    setProductList(data);
-    // console.log('쿼리값은?', searchQuery);
-    // console.log('데이터', data);
-  };
+  // const getProducts = async () => {
+  //   let searchQuery = query.get('q') || '';
+  //   // console.log('쿼리값은?', searchQuery);
+  //   let url = `http://localhost:3004/products?q=${searchQuery}`;
+  //   let response = await fetch(url);
+  //   let data = await response.json();
+  //   // console.log('데이터', data);
+  //   setProductList(data);
+  //   // console.log('쿼리값은?', searchQuery);
+  //   // console.log('데이터', data);
+  // };
 
-  useEffect(() => {
-    getProducts();
-  }, [query]);
+  // useEffect(() => {
+  //   getProducts();
+  // }, [query]);
 
   return (
     <Container className="product-all-wrap">
@@ -38,7 +38,7 @@ const ProductAll = () => {
             </Col>
           ))
         ) : (
-          <p>상품 없어용 ...</p>
+          <p>상품 안 보여요...</p>
         )}
       </Row>
     </Container>

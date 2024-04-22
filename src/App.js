@@ -22,10 +22,13 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<ProductAll />} />
-        <Route path="/login" element={<Login />} />
+        <Route
+          path="/login"
+          element={<Login setAuthenticate={setAuthenticate} />}
+        />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route
-          path="/buy"
+          path="/buy/:id"
           element={<PrivateRoute authenticate={authenticate} />}
         />
       </Routes>

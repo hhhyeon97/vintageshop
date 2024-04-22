@@ -95,15 +95,15 @@
 }
 
 .card-hover {
-  transition: transform 0.3s ease;
+  transition: 0.3s ease-out;
 }
 
 .card-hover:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .footer-area {
-  margin-top: 80px;
+  margin-top: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,13 +167,17 @@
 .login-wrap {
   height: 60vh;
   flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .login-wrap input {
   margin: 25px auto;
 }
 
-.login-btn {
+.login-wrap .login-btn {
   width: 200px;
 }
 

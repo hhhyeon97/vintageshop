@@ -3,7 +3,7 @@ import React from 'react';
 const Payment = () => {
   return (
     <div>
-      <h3>payment page!</h3>
+      <h3 style={{ textAlign: 'center' }}>payment page!</h3>
     </div>
   );
 };

@@ -9,7 +9,7 @@ const Header = ({ authenticate, setAuthenticate }) => {
 
   const goSearch = (e) => {
     if (e.key === 'Enter') {
-      navigate(`/?q=${e.target.value}`);
+      navigate(`?q=${e.target.value}`);
     }
   };
 

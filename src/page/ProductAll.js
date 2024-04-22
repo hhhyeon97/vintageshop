@@ -9,13 +9,15 @@ const ProductAll = () => {
   const navigate = useNavigate();
   const menuList = ['헤드폰', '스피커', '카세트', '턴테이블', 'CD플레이어'];
   const [filteredProductList, setFilteredProductList] = useState([]);
+
   const getProducts = async () => {
     let searchQuery = query.get('q') || '';
     console.log('쿼리값은?', searchQuery);
     let url = `http://localhost:3004/products?q=${searchQuery}`;
     let response = await fetch(url);
     let data = await response.json();
-    setProductList(data);
+    setProductList(data); // 상품 목록 설정
+    setFilteredProductList(data); // 필터된 상품 목록도 초기화
   };
 
   useEffect(() => {
@@ -23,12 +25,9 @@ const ProductAll = () => {
   }, [query]);
 
   const handleMenuClick = (menu) => {
-    const filteredProducts = productList.filter(
-      (item) => item.category === menu,
-    );
+    const filteredProducts = productList.filter((item) => item.type === menu);
     setFilteredProductList(filteredProducts);
-    console.log(filteredProductList);
-    // navigate(`category=${menu}`);
+    console.log(filteredProducts);
   };
 
   return (
@@ -40,9 +39,9 @@ const ProductAll = () => {
           </li>
         ))}
       </ul>
-      {productList.length ? (
+      {filteredProductList.length ? (
         <Row xs={1} sm={2} md={2} lg={4} className="justify-content-center">
-          {productList.map((item) => (
+          {filteredProductList.map((item) => (
             <Col
               key={item.id}
               lg={3}

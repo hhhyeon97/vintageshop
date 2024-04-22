@@ -47,6 +47,9 @@
   font-size: 22px;
   top: 30px;
 }
+.login-title:hover {
+  color: rgb(96, 100, 105);
+}
 .dibs-icon {
   position: absolute;
   right: 150px;
@@ -317,5 +320,14 @@ ul {
     font-size: 16px;
     top: 50px;
     color: #4e5157;
+  }
+}
+
+@media (max-width: 450px) {
+  .scroll-up-btn {
+    width: 35px;
+    height: 35px;
+    right: 10px;
+    bottom: 55px;
   }
 }

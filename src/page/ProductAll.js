@@ -7,8 +7,16 @@ const ProductAll = () => {
   const [productList, setProductList] = useState([]);
   const [query, setQuery] = useSearchParams();
   const navigate = useNavigate();
-  const menuList = ['헤드폰', '스피커', '카세트', '턴테이블', 'CD플레이어'];
+  const menuList = [
+    '전체',
+    '헤드폰',
+    '스피커',
+    '카세트',
+    '턴테이블',
+    'CD플레이어',
+  ];
   const [filteredProductList, setFilteredProductList] = useState([]);
+  const [selectedMenu, setSelectedMenu] = useState('전체');
 
   const getProducts = async () => {
     let searchQuery = query.get('q') || '';
@@ -16,8 +24,8 @@ const ProductAll = () => {
     let url = `http://localhost:3004/products?q=${searchQuery}`;
     let response = await fetch(url);
     let data = await response.json();
-    setProductList(data); // 상품 목록 설정
-    setFilteredProductList(data); // 필터된 상품 목록도 초기화
+    setProductList(data);
+    setFilteredProductList(data);
   };
 
   useEffect(() => {
@@ -25,16 +33,26 @@ const ProductAll = () => {
   }, [query]);
 
   const handleMenuClick = (menu) => {
-    const filteredProducts = productList.filter((item) => item.type === menu);
-    setFilteredProductList(filteredProducts);
-    console.log(filteredProducts);
+    if (menu === '전체') {
+      setFilteredProductList(productList);
+    } else {
+      const filteredProducts = productList.filter((item) => item.type === menu);
+      setFilteredProductList(filteredProducts);
+    }
+    setSelectedMenu(menu); // 선택된 메뉴 업데이트
   };
 
   return (
     <Container className="product-all-wrap">
       <ul className="nav-list nes-pointer">
         {menuList.map((menu, index) => (
-          <li key={index} onClick={() => handleMenuClick(menu)}>
+          <li
+            key={index}
+            onClick={() => handleMenuClick(menu)}
+            style={{
+              backgroundColor: menu === selectedMenu ? 'white' : 'inherit',
+            }}
+          >
             {menu}
           </li>
         ))}

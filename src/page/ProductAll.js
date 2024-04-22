@@ -16,9 +16,8 @@ const ProductAll = () => {
   ];
   const [filteredProductList, setFilteredProductList] = useState([]);
   const [selectedMenu, setSelectedMenu] = useState('전체');
-
   const getProducts = async () => {
-    let url = `http://localhost:3004/products`;
+    let url = `https://my-json-server.typicode.com/hhhyeon97/wavehub/products`;
     let response = await fetch(url);
     let data = await response.json();
     setProductList(data);

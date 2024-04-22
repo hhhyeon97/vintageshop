@@ -1,22 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-const Header = () => {
+const Header = ({ authenticate, setAuthenticate }) => {
   const navigate = useNavigate();
 
   const goToHome = () => {
     navigate('/');
   };
-  const goToLogin = () => {
-    navigate('/login');
+
+  const goSearch = (e) => {
+    if (e.key === 'Enter') {
+      navigate(`/?q=${e.target.value}`);
+    }
   };
 
-  const search = (event) => {
-    // console.log("let's search!");
-    if (event.key === 'Enter') {
-      // console.log('we click this key!', event.key);
-      let keyword = event.target.value;
-      // console.log('keyword', keyword);
-      navigate(`/?q=${keyword}`);
+  const handleAuthClick = () => {
+    if (authenticate) {
+      alert('로그아웃되었습니다!');
+      setAuthenticate(false);
+    } else {
+      navigate('/login');
     }
   };
 
@@ -167,10 +169,10 @@ const Header = () => {
         type="text"
         placeholder="상품을 검색해보아요 : )"
         class="search-input"
-        onKeyPress={(event) => search(event)}
+        onKeyPress={(e) => goSearch(e)}
       />
-      <h4 className="login-title nes-pointer" onClick={goToLogin}>
-        LOGIN
+      <h4 className="login-title nes-pointer" onClick={handleAuthClick}>
+        {authenticate ? 'LOGOUT' : 'LOGIN'}
       </h4>
     </div>
   );

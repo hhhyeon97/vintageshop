@@ -69,6 +69,26 @@
   outline: none;
 }
 
+/* nav-list */
+.nav-list {
+  list-style: none;
+  font-family: 'DungGeunMo';
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.nav-list li {
+  padding: 4px 40px;
+  border: 2px solid aliceblue;
+  border-radius: 6px;
+  margin: auto 10px;
+}
+
+.nav-list li:hover {
+  background-color: azure;
+}
+
 /* card  */
 .card-price {
   font-size: 12px;
@@ -115,6 +135,15 @@
 
 .card-hover:hover {
   transform: scale(1.15);
+}
+
+/* no-result text */
+.no-result {
+  font-size: 25px;
+  font-family: 'DungGeunMo';
+  color: gray;
+  height: 32vh;
+  text-align: center;
 }
 
 /* footer */
@@ -222,5 +251,7 @@
   }
   .login-wrap input {
     width: 60%;
+  }
+  .no-result {
   }
 }

@@ -18,14 +18,35 @@ const ProductAll = () => {
   const [filteredProductList, setFilteredProductList] = useState([]);
   const [selectedMenu, setSelectedMenu] = useState('전체');
 
+  // const getProducts = async () => {
+  //   let searchQuery = query.get('q') || '';
+  //   console.log('쿼리값은?', searchQuery);
+  //   let url = `http://localhost:3004/products?q=${searchQuery}`;
+  //   let response = await fetch(url);
+  //   let data = await response.json();
+  //   setProductList(data);
+  //   setFilteredProductList(data);
+  // };
+
   const getProducts = async () => {
     let searchQuery = query.get('q') || '';
     console.log('쿼리값은?', searchQuery);
     let url = `http://localhost:3004/products?q=${searchQuery}`;
     let response = await fetch(url);
     let data = await response.json();
+    console.log('검색 결과:', data);
     setProductList(data);
-    setFilteredProductList(data);
+
+    // 검색어가 있을 경우, 상품 목록에서 검색어를 포함하는 상품만 필터링
+    if (searchQuery.trim() !== '') {
+      const filteredProducts = data.filter((item) =>
+        item.name.toLowerCase().includes(searchQuery.toLowerCase().trim()),
+      );
+      console.log('필터링된 결과:', filteredProducts);
+      setFilteredProductList(filteredProducts);
+    } else {
+      setFilteredProductList(data);
+    }
   };
 
   useEffect(() => {
@@ -71,7 +92,8 @@ const ProductAll = () => {
         </Row>
       ) : (
         <div className="mb-5 no-result">
-          "{query.get('q')}"와(과) 일치하는 상품이 없습니다.
+          <span className="search-text">"{query.get('q')}"</span>와(과) 일치하는
+          상품이 없습니다.
         </div>
       )}
     </Container>

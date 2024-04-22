@@ -9,7 +9,7 @@ const Header = ({ authenticate, setAuthenticate }) => {
 
   const goSearch = (e) => {
     if (e.key === 'Enter') {
-      navigate(`?q=${e.target.value}`);
+      navigate(`/?q=${e.target.value}`);
     }
   };
 
@@ -17,6 +17,7 @@ const Header = ({ authenticate, setAuthenticate }) => {
     if (authenticate) {
       alert('로그아웃되었습니다!');
       setAuthenticate(false);
+      navigate('/');
     } else {
       navigate('/login');
     }

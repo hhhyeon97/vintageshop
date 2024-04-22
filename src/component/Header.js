@@ -7,12 +7,6 @@ const Header = ({ authenticate, setAuthenticate }) => {
     navigate('/');
   };
 
-  const goSearch = (e) => {
-    if (e.key === 'Enter') {
-      navigate(`/?q=${e.target.value}`);
-    }
-  };
-
   const handleAuthClick = () => {
     if (authenticate) {
       alert('로그아웃되었습니다!');
@@ -166,12 +160,6 @@ const Header = ({ authenticate, setAuthenticate }) => {
         </h2>
       </div>
 
-      <input
-        type="text"
-        placeholder="상품을 검색해보아요 : )"
-        class="search-input"
-        onKeyPress={(e) => goSearch(e)}
-      />
       <h4 className="login-title nes-pointer" onClick={handleAuthClick}>
         {authenticate ? 'LOGOUT' : 'LOGIN'}
       </h4>

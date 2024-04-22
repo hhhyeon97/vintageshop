@@ -9,7 +9,7 @@ const Card = ({ item }) => {
   };
 
   return (
-    <div>
+    <div className="card-hover">
       <div className="img-badge-area">
         <img
           style={{

@@ -13,10 +13,6 @@ import PrivateRoute from './route/PrivateRoute';
 function App() {
   const [authenticate, setAuthenticate] = useState(false);
 
-  // useEffect(() => {
-  //   console.log('aaa', authenticate);
-  // }, [authenticate]);
-
   return (
     <div className="wrap">
       <Header authenticate={authenticate} setAuthenticate={setAuthenticate} />

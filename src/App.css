@@ -76,17 +76,56 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+ul {
+  padding-left: 0;
 }
 
 .nav-list li {
-  padding: 4px 40px;
+  padding: 10px;
   border: 2px solid aliceblue;
   border-radius: 6px;
-  margin: auto 10px;
+  margin: 5px auto;
+  text-align: center;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
 }
 
-.nav-list li:hover {
-  background-color: azure;
+@media only screen and (max-width: 1204px) {
+  .nav-list li {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-list li {
+    width: calc(50% - 20px);
+  }
+}
+
+/* scroll up btn */
+
+.scroll-up-btn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 999;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 15px;
+  cursor: pointer;
+  padding-left: 3px;
+  padding-top: 3px;
+}
+.scroll-up-btn:hover {
+  opacity: 0.8;
 }
 
 /* card  */
@@ -233,6 +272,12 @@
   width: 200px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .scroll-up-btn {
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
   .detail-wrap {
     text-align: center;
@@ -258,6 +303,13 @@
   .login-wrap input {
     width: 60%;
   }
-  .no-result {
+}
+
+@media (max-width: 500px) {
+  .scroll-up-btn {
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    bottom: 30px;
   }
 }

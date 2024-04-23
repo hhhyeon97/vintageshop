@@ -322,7 +322,21 @@ ul {
 }
 
 /* wish */
-.wish-btn {
+
+.go-wish-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  border: 2px solid aliceblue;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin-left: 10px;
+}
+.wish-text {
+  margin-left: 20px;
+  font-size: 20px;
+  color: #4e5157;
+  position: relative;
+  top: 4px;
 }
 
 @media only screen and (max-width: 1024px) {

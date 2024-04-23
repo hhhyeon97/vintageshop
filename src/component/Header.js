@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 const Header = ({ authenticate, setAuthenticate }) => {
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ const Header = ({ authenticate, setAuthenticate }) => {
 
   const handleAuthClick = () => {
     if (authenticate) {
-      alert('로그아웃되었습니다!');
+      alert('로그아웃 되었습니다!');
       setAuthenticate(false);
       navigate('/');
     } else {

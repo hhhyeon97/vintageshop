@@ -275,6 +275,11 @@ ul {
   width: 200px;
 }
 
+/* payment page */
+.pay-title {
+  font-family: 'DungGeunMo';
+}
+
 @media only screen and (max-width: 1024px) {
   .scroll-up-btn {
     display: block;

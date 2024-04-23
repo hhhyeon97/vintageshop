@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const Payment = () => {
   const { id } = useParams();
@@ -32,16 +32,21 @@ const Payment = () => {
   }, [id]);
 
   return (
-    <div className="payment">
-      <h3 style={{ textAlign: 'center' }}>주문이 완료되었습니다 : )</h3>
+    <div className="payment-area">
+      <h3 style={{ textAlign: 'center' }} className="payment-title">
+        주문이 완료되었습니다 : )
+      </h3>
       {product && (
-        <div>
+        <div className="order-box">
           <p>주문 번호: {orderNumber}</p>
-          <p>주문 상품 아이디: {id}</p>
+          <img src={product.img} alt="" />
           <p>상품명: {product.title}</p>
           <p>상품 가격: {product.price.toLocaleString('ko-KR')}원</p>
         </div>
       )}
+      <div className="return-home">
+        <Link to="/">HOME으로 돌아가기</Link>
+      </div>
     </div>
   );
 };

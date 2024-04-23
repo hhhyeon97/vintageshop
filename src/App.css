@@ -276,8 +276,49 @@ ul {
 }
 
 /* payment page */
-.pay-title {
+.payment-title {
+  color: #ebe6bb;
+  margin: 35px auto;
+}
+
+.payment-area {
   font-family: 'DungGeunMo';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+  color: #424447;
+}
+
+.order-box {
+  width: 400px;
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.order-box p {
+  font-size: 20px;
+}
+.order-box img {
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+.return-home a {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+.return-home a:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1024px) {

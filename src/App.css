@@ -339,6 +339,47 @@ ul {
   top: 4px;
 }
 
+.wish-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+  text-align: center;
+}
+
+.wish-title-area {
+  position: absolute;
+  top: 170px;
+}
+
+.wish-page h2 {
+  color: #424447;
+  margin-bottom: 15px;
+}
+
+.wish-page p {
+  font-family: 'DungGeunMo';
+  font-size: 25px;
+  color: #707377;
+}
+
+.wish-page ul {
+  margin-top: 35px;
+}
+
+.wish-page ul li {
+  margin: 10px auto;
+  padding: 4px 12px;
+  font-family: 'DungGeunMo';
+  list-style: none;
+  font-size: 20px;
+}
+
+.wish-page ul li a {
+  color: rgb(242, 248, 253);
+}
+
 @media only screen and (max-width: 1024px) {
   .scroll-up-btn {
     display: block;

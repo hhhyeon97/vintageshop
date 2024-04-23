@@ -12,7 +12,10 @@ const Wish = () => {
 
   return (
     <div className="wish-page">
-      <h2>찜한 상품 목록</h2>
+      <div className="wish-title-area">
+        <i class="nes-icon is-large is-transparent heart"></i>
+        <h2>wish list</h2>
+      </div>
       {wishList.length > 0 ? (
         <ul>
           {wishList.map((item) => (

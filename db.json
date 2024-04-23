@@ -54,13 +54,14 @@
       "new": true,
       "choice": false
     },
+
     {
       "id": 6,
-      "img": "https://i.pinimg.com/564x/79/35/fd/7935fdd3d14cac46d25c1bc83249ebe8.jpg",
-      "title": "WM-F21",
-      "price": 99000,
-      "type": "카세트",
-      "new": false,
+      "img": "https://image6.coupangcdn.com/image/retail/images/2022/12/26/13/7/fb841524-cfcb-4977-80fc-0160c2d23433.jpg",
+      "title": "사운드룩 LP 턴테이블",
+      "price": 56000,
+      "type": "턴테이블",
+      "new": true,
       "choice": false
     },
     {
@@ -72,7 +73,6 @@
       "new": false,
       "choice": false
     },
-
     {
       "id": 8,
       "img": "https://i.pinimg.com/564x/80/0e/6e/800e6ea09d50844578512c59ff2726fe.jpg",
@@ -129,11 +129,11 @@
     },
     {
       "id": 14,
-      "img": "https://image6.coupangcdn.com/image/retail/images/2022/12/26/13/7/fb841524-cfcb-4977-80fc-0160c2d23433.jpg",
-      "title": "사운드룩 LP 턴테이블",
-      "price": 56000,
-      "type": "턴테이블",
-      "new": true,
+      "img": "https://i.pinimg.com/564x/79/35/fd/7935fdd3d14cac46d25c1bc83249ebe8.jpg",
+      "title": "WM-F21",
+      "price": 99000,
+      "type": "카세트",
+      "new": false,
       "choice": false
     },
     {

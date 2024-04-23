@@ -20,7 +20,6 @@ const ProductDetail = () => {
   }, []);
 
   const goBuy = () => {
-    console.log('결제페이지로이동하자');
     navigate(`/buy/${product.id}`);
   };
 

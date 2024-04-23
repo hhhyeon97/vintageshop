@@ -321,6 +321,10 @@ ul {
   text-decoration: underline;
 }
 
+/* wish */
+.wish-btn {
+}
+
 @media only screen and (max-width: 1024px) {
   .scroll-up-btn {
     display: block;

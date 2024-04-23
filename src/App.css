@@ -338,7 +338,9 @@ ul {
   position: relative;
   top: 4px;
 }
-
+.go-wish-btn:hover {
+  opacity: 0.8;
+}
 .wish-page {
   display: flex;
   justify-content: center;
@@ -346,11 +348,6 @@ ul {
   flex-direction: column;
   height: 60vh;
   text-align: center;
-}
-
-.wish-title-area {
-  position: absolute;
-  top: 170px;
 }
 
 .wish-page h2 {
@@ -364,16 +361,12 @@ ul {
   color: #707377;
 }
 
-.wish-page ul {
-  margin-top: 35px;
-}
-
 .wish-page ul li {
   margin: 10px auto;
   padding: 4px 12px;
   font-family: 'DungGeunMo';
   list-style: none;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .wish-page ul li a {
@@ -434,5 +427,18 @@ ul {
     height: 35px;
     right: 10px;
     bottom: 55px;
+  }
+  .go-wish-btn {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-left: 0;
+    margin: 20px 30px;
+  }
+  .wish-text {
+    font-size: 17px;
+  }
+  .go-wish-icon {
+    width: 30px;
   }
 }

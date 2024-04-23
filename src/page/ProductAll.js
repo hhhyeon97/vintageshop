@@ -66,9 +66,10 @@ const ProductAll = () => {
 
   return (
     <Container className="product-all-wrap">
-      <div className="go-wish-btn" onClick={goToWish}>
-        <span className="nes-pointer">
+      <div className="go-wish-btn nes-pointer" onClick={goToWish}>
+        <span>
           <svg
+            className="go-wish-icon"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 45 45"
             height={45}

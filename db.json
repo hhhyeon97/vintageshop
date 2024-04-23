@@ -54,7 +54,6 @@
       "new": true,
       "choice": false
     },
-
     {
       "id": 6,
       "img": "https://image6.coupangcdn.com/image/retail/images/2022/12/26/13/7/fb841524-cfcb-4977-80fc-0160c2d23433.jpg",
@@ -93,12 +92,12 @@
     },
     {
       "id": 10,
-      "img": "https://i.pinimg.com/564x/13/5e/86/135e865756a966e16ea269fa6934042c.jpg",
-      "title": "WM-F83",
-      "price": 512000,
-      "type": "카세트",
-      "new": false,
-      "choice": false
+      "img": "https://image7.coupangcdn.com/image/retail/images/2023/11/13/11/8/0eee0452-0122-40f1-ad5f-64bb232be64f.jpg",
+      "title": "액센 CD Mini 플레이어",
+      "price": 69000,
+      "type": "CD플레이어",
+      "new": true,
+      "choice": true
     },
     {
       "id": 11,
@@ -183,12 +182,12 @@
     },
     {
       "id": 20,
-      "img": "https://image7.coupangcdn.com/image/retail/images/2023/11/13/11/8/0eee0452-0122-40f1-ad5f-64bb232be64f.jpg",
-      "title": "액센 CD Mini 플레이어",
-      "price": 69000,
-      "type": "CD플레이어",
-      "new": true,
-      "choice": true
+      "img": "https://i.pinimg.com/564x/13/5e/86/135e865756a966e16ea269fa6934042c.jpg",
+      "title": "WM-F83",
+      "price": 512000,
+      "type": "카세트",
+      "new": false,
+      "choice": false
     },
     {
       "id": 21,

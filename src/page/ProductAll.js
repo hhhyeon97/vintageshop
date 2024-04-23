@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Card from '../component/Card';
+import { useNavigate } from 'react-router-dom';
 
 const ProductAll = () => {
   const [productList, setProductList] = useState([]);
@@ -14,6 +15,8 @@ const ProductAll = () => {
   ];
   const [filteredProductList, setFilteredProductList] = useState([]);
   const [selectedMenu, setSelectedMenu] = useState('전체');
+  const navigate = useNavigate();
+
   const getProducts = async () => {
     let url = `https://my-json-server.typicode.com/hhhyeon97/wavehub/products`;
     let response = await fetch(url);
@@ -57,9 +60,13 @@ const ProductAll = () => {
     });
   };
 
+  const goToWish = () => {
+    navigate('/wish');
+  };
+
   return (
     <Container className="product-all-wrap">
-      <div className="go-wish-btn">
+      <div className="go-wish-btn" onClick={goToWish}>
         <span className="nes-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"

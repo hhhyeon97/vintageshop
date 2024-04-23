@@ -7,8 +7,9 @@ import ProductAll from './page/ProductAll';
 import { Routes, Route } from 'react-router-dom';
 import Login from './page/Login';
 import ProductDetail from './page/ProductDetail';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import PrivateRoute from './route/PrivateRoute';
+import Wish from './page/Wish';
 
 function App() {
   const [authenticate, setAuthenticate] = useState(false);
@@ -27,6 +28,7 @@ function App() {
           path="/buy/:id"
           element={<PrivateRoute authenticate={authenticate} />}
         />
+        <Route path="/wish" element={<Wish />} />
       </Routes>
       <Footer />
     </div>

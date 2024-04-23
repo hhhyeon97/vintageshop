@@ -10,7 +10,23 @@ const Card = ({ item }) => {
   };
 
   const handleLikeClick = () => {
-    setIsLiked(!isLiked); // 클릭할 때마다 상태를 반전시킴
+    // 클릭할 때마다 상태를 반전시킴
+    setIsLiked(!isLiked);
+
+    // 로컬 스토리지에서 찜한 상품 목록을 가져옴
+    const storedWishList = JSON.parse(localStorage.getItem('wishList')) || [];
+
+    if (isLiked) {
+      // 이미 찜한 상태에서 다시 누르면 제거
+      const updatedWishList = storedWishList.filter(
+        (wishItem) => wishItem.id !== item.id,
+      );
+      localStorage.setItem('wishList', JSON.stringify(updatedWishList));
+    } else {
+      // 찜하지 않은 상태에서 누르면 추가
+      const updatedWishList = [...storedWishList, item];
+      localStorage.setItem('wishList', JSON.stringify(updatedWishList));
+    }
   };
 
   return (

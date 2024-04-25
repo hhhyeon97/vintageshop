@@ -17,7 +17,7 @@ const Wish = () => {
         <h2>wish list</h2>
       </div>
       {wishList.length > 0 ? (
-        <ul>
+        <ul className="wish-area">
           {wishList.map((item) => (
             <li key={item.id}>
               <Link to={`/product/${item.id}`}>{item.title}</Link>

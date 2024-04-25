@@ -376,6 +376,19 @@ ul {
   color: rgb(242, 248, 253);
 }
 
+.wish-area {
+  width: 400px;
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
 @media only screen and (max-width: 1024px) {
   .scroll-up-btn {
     display: block;
